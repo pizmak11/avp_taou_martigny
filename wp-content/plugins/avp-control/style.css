@@ -1,0 +1,500 @@
+.avp-control {
+    padding: 30px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: solid 1px #32373C;
+    background-color: #23282D;
+    overflow: auto;
+}
+
+.avp-control h3, .avp-control label, .avp-control button, .avp-control {
+    color: #EEEEEE;
+}
+
+.avp-control h3 {
+    margin: 0 0 15px 0;
+    padding-bottom: 15px;
+    border-bottom: solid 1px #32373C;
+}
+
+.avp-control form {
+    margin: 0;
+}
+
+.avp-control hr {
+    border: none;
+    margin: 0 0 15px 0;
+    padding-bottom: 15px;
+    border-bottom: solid 1px #32373C;
+}
+
+.avp-control label {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.avp-control label:hover {
+    color: #999999;
+}
+
+.avp-control input[type="text"],
+.avp-control input[type="email"],
+.avp-control input[type="password"],
+.avp-control select,
+.avp-control option {
+    background-color: #33373C;
+    border-color: #999999;
+    color: #FFFFFF;
+}
+
+.avp-control input[type="color"] {
+    width: 34px;
+    height: 34px;
+    border: none;
+    margin-right: 10px;
+    border-radius: 50%;
+    vertical-align: middle;
+    position: relative;
+    background: none;
+    margin-top: -4px;
+    cursor: pointer;
+}
+
+.avp-control input[type="color"]:hover {
+    opacity: .7;
+}
+
+.avp-control input[type="color"]:hover + label {
+    color: #999999;
+}
+
+.avp-control input[type="color"]::after {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    border-radius: 50%;
+    top: -1px;
+    left: -1px;
+    box-shadow: 0 0 0 2px #999999 inset;
+    border: solid 6px #33373c;
+}
+
+.avp-control input[type="checkbox"],
+.avp-filters input[type="checkbox"] {
+    display: none !important;
+}
+
+.avp-control input[type="checkbox"] + label,
+.avp-filters input[type="checkbox"] + label {
+    padding-left: 50px;
+    cursor: pointer;
+}
+
+.avp-control input[type="checkbox"] + label:hover,
+.avp-filters input[type="checkbox"] + label:hover {
+    text-decoration: underline;
+}
+
+.avp-control input[type="checkbox"] + label::before,
+.avp-filters input[type="checkbox"] + label::before {
+    left: 0;
+    width: 29px;
+    height: 12px;
+    padding: 3px;
+    margin-right: 15px;
+    border: solid 2px #32373C;
+    background-color: #DDDDDD;
+    box-shadow: 0 0 0 2px #FFFFFF inset;
+}
+
+.avp-control input[type="checkbox"] + label::after,
+.avp-filters input[type="checkbox"] + label::after {
+    top: 4px;
+    left: 4px;
+    width: 14px;
+    height: 14px;
+    background-color: #999999;
+}
+
+.avp-control input[type="checkbox"] + label::before,
+.avp-filters input[type="checkbox"] + label::before,
+.avp-control input[type="checkbox"] + label::after,
+.avp-filters input[type="checkbox"] + label::after {
+    content: "";
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    border-radius: 12px;
+    transition-duration: .2s;
+}
+
+.avp-control input[type="checkbox"]:checked + label::after,
+.avp-filters input[type="checkbox"]:checked + label::after {
+    background-color: #44CC00;
+    left: 20px;
+}
+
+.avp-control input[type="checkbox"]:checked + label::before,
+.avp-filters input[type="checkbox"]:checked + label::before {
+    background-color: #BBEEAA;
+}
+
+.avp-control .avp-inputs > div {
+    margin-bottom: 15px;
+}
+
+.avp-control .field {
+    background-color: #33373C;
+    padding: 10px;
+    display: block;
+    width: 200px;
+    min-width: fit-content;
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.avp-control .field input[type="text"],
+.avp-control .field input[type="email"],
+.avp-control .field input[type="password"] {
+    min-width: 240px;
+}
+
+.avp-control .txt-l, .avp-control .txt-ls {
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    background-color: #33373C;
+    border: solid 1px #33373C;
+    /*text-align: center;*/
+    padding: 0 10px;
+    margin-right: 10px;
+}
+
+.avp-control .txt-l {
+    width: 80px;
+    margin-top: -4px;
+}
+
+.avp-control .txt-ls {
+    width: 30px;
+    margin-left: 30px; 
+    margin-top: 0;
+}
+
+.avp-control button {
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition-duration: .2s;
+    background-color: #0073AA;
+}
+
+.avp-control button:hover {
+    background-color: #32373C;
+}
+
+.avp-control table {
+    border: solid 1px #32373C;
+    width: 100%;
+}
+
+.avp-control td, .avp-control th {
+    padding: 5px 10px;
+    text-align: center;
+    position: relative;
+}
+
+.avp-control th {
+    background-color: #0073AA;
+}
+
+.avp-control td:nth-child(odd) {
+    /*background-color: #23282D;*/
+    background-color: #292E33;
+}
+
+.avp-control td:nth-child(even) {
+    background-color: #32373C;
+}
+
+.avp-control tr:hover td {
+    /*background-color: #9EA3A8;*/
+    background-color: #61656B;
+}
+
+/*
+#wpwrap {
+background-color: #9EA3A8;
+}*/
+
+.avp-status {
+    opacity: 1;
+    height: 45px;
+    display: flex;
+    color: #FFFFFF;
+    overflow: hidden;
+    padding: 5px 30px;
+    margin-right: 20px;
+    border-radius: 5px;
+    align-items: center;
+    margin-bottom: 15px;
+    background-color: #0073AA;
+    animation: hideStatus .6s 6s forwards;
+    box-shadow: 0 0 0 2px #23282D inset;
+}
+
+@keyframes hideStatus {
+    100% {
+        opacity: 0;
+        height: 0px;
+        margin-bottom: 0;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+}
+
+.avp-control .add-row {
+    width: calc(100% - 28px);
+    border: solid 3px #24282D;
+    padding: 5px;
+}
+
+.avp-control .table-prix td {
+    padding: 0;
+    transition-duration: .2s;
+}
+
+.avp-control .table-prix input[type="text"] {
+    border: none;
+    border-radius: 0;
+    background: none;
+    padding: 0;
+    width: 100%;
+    color: #EEEEEE;
+    text-align: center;
+}
+
+.avp-control .table-prix .c-action {
+    width: 28px;
+    padding: 0;
+    background: none;
+    border: none;
+}
+
+.avp-control .table-prix .c-action button {
+    width: 100%;
+    height: 28px;
+    padding: 0;
+}
+
+.avp-control .status-text {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 0 0 2px #000000;
+}
+
+.avp-control .c-21:hover .status-text {
+    opacity: 0;
+}
+
+.avp-control .status-text.v { background-color: #F94444; }
+.avp-control .status-text.r { background-color: #F0CB30; }
+.avp-control .status-text.d { background-color: #60CC30; }
+
+.avp-control .c-21 {
+    width: 125px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.avp-control .c-21 input {
+    display: none;
+}
+
+.avp-control .c-21 label {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 2px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    transition-duration: .2s;
+    cursor: pointer;
+    box-shadow: 0 0 2px #000000;
+}
+
+.avp-control .c-21 label::after {
+    display: none;
+    position: absolute;
+    bottom: -25px;
+    height: 20px;
+    width: 80px;
+    border-radius: 4px;
+    text-shadow: 0 0 2px #000000;
+    box-shadow: 0 0 2px #000000;
+    left: -40px;
+    right: -40px;
+    margin: auto;
+    color: #FFFFFF;
+}
+
+.avp-control .c-21 label:hover::after {
+    display: block;
+}
+
+.avp-control .c-21 div {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: .2s;
+    opacity: 0;
+    z-index: 1;
+}
+
+.avp-control .c-21:hover div {
+    opacity: 1;
+}
+
+.avp-control .c-21 span {
+    transition-duration: .2s;
+}
+
+.avp-control .c-21 span.v {
+
+}
+
+.avp-control .c-21 label:nth-of-type(1) { background-color: #F98888; }
+.avp-control .c-21 label:nth-of-type(2) { background-color: #F0EBA8; }
+.avp-control .c-21 label:nth-of-type(3) { background-color: #A3E291; }
+
+.avp-control .c-21 label:nth-of-type(1):hover { background-color: #F94444; }
+.avp-control .c-21 label:nth-of-type(2):hover { background-color: #F0CB30; }
+.avp-control .c-21 label:nth-of-type(3):hover { background-color: #60CC30; }
+
+.avp-control .c-21 label:nth-of-type(1)::after { background-color: #F94444; content: "Vendu"; }
+.avp-control .c-21 label:nth-of-type(2)::after { background-color: #F0CB30; content: "Réservé"; }
+.avp-control .c-21 label:nth-of-type(3)::after { background-color: #60CC30; content: "Disponible"; }
+
+/*
+.avp-control .c-21 label:nth-of-type(1).active { background-color: #F94444; }
+.avp-control .c-21 label:nth-of-type(2).active { background-color: #F0CB30; }
+.avp-control .c-21 label:nth-of-type(3).active { background-color: #60CC30; }*/
+
+@media only screen and (max-width: 1380px) {
+    .avp-control .c-21 {
+        width: auto;
+    }
+    
+    .avp-control form {
+        min-width: 1000px;
+    }
+}
+@media only screen and (max-width: 782px) {
+    .avp-control .field {
+        width: 100%;
+    }
+}
+
+/********************/
+/* FRONT ************/
+/********************/
+
+.avp-table {
+    border-collapse: collapse;
+}
+
+#tooltip .avp-table {
+    border-collapse: collapse !important;
+}
+
+#tooltip .avp-table th,
+#tooltip .avp-table td {
+    padding: 2.5px !important;
+    height: auto;
+}
+
+.avp-prix td span {
+    position: absolute;
+    left: -30px;
+    right: -30px;
+    margin: auto;
+    width: 95px;
+    height: 20px;
+    top: 0;
+    bottom: 0;
+    color: #FFFFFF !important;
+    text-transform: uppercase;
+    line-height: 20px;
+    max-width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition-duration: .2s;
+}
+
+.avp-table td:hover span {
+    opacity: 1;
+    visibility: visible;
+}
+
+.avp-table td, .avp-table th {
+    position: relative;
+    text-align: center;
+    padding: 5px;
+}
+
+.avp-prix i {
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.avp-table tr.v i,
+.avp-table .v span {
+    background-color: #F98888;
+}
+.avp-table tr.r i,
+.avp-table .r span {
+    background-color: #F0EBA8;
+}
+.avp-table tr.d i,
+.avp-table .d span {
+    background-color: #A3E291;
+}
+
+.avp-lot-data {
+    margin: auto;
+}
+
+.avp-lot-data td {
+    cursor: auto !important;
+}
+
+.avp-filters {
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.avp-filters > div {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin-right: 30px;
+}
